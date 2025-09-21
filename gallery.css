@@ -22,6 +22,13 @@ body {
   font-size: 18px;
   text-align: center;
 }
+.section {
+  max-width: 1200px;      /* Max container width */
+  margin: 40px auto;      /* Top/bottom margin and auto left/right to center */
+  padding: 20px;          /* Inner padding */
+  background-color: #fff; /* Optional background for separation */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
 
 /* Remove right border on last column */
 .container > div:nth-child(3n) {
@@ -32,3 +39,4 @@ body {
 .container > div:nth-last-child(-n+3) {
   border-bottom: none;
 }
+
