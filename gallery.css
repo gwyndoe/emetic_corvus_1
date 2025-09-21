@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inconsolata&display=swap');
 
-.gallery-newspaper {
-  background-color: #f5f1ea;
+.gallery-section {
+  background-color: #f7f1e8;
   background-image: url('https://www.transparenttextures.com/patterns/pw-maze-white.png');
-  padding: 40px 20px;
   font-family: 'Inconsolata', monospace;
   color: #000;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 40px 20px;
   box-sizing: border-box;
 }
 
@@ -20,52 +20,52 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .gallery-header span {
   font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 30px;
   display: block;
-  margin-bottom: 24px;
 }
 
-.main-feature {
+.gallery-main {
   display: flex;
   gap: 24px;
-  align-items: flex-start;
   margin-bottom: 40px;
+  align-items: flex-start;
 }
 
-.main-feature img {
+.gallery-image {
   width: 40%;
   object-fit: contain;
   border: 1px solid #ccc;
 }
 
-.feature-text {
+.gallery-text {
   flex: 1;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .read-more {
-  margin-top: 16px;
   font-weight: bold;
-  letter-spacing: 1.5px;
-  color: #000;
   text-decoration: underline dashed;
-  cursor: pointer;
+  margin-top: 12px;
   display: inline-block;
+  cursor: pointer;
+  color: #000;
 }
 
 .contact-box {
-  width: 280px;
   border: 1px dashed #000;
   padding: 20px;
+  max-width: 300px;
   font-family: 'Inconsolata', monospace;
   font-size: 1rem;
   margin-bottom: 40px;
@@ -73,62 +73,57 @@
 
 .contact-box h2 {
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
-.contact-box a {
-  color: #000;
-  text-decoration: underline dashed;
-}
-
 .feature-story {
   position: relative;
   margin-bottom: 40px;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .feature-story h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 2.2rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .feature-story .subtitle {
   font-weight: 700;
   margin-bottom: 16px;
   text-transform: uppercase;
-  letter-spacing: 3px;
   font-size: 0.9rem;
+  letter-spacing: 3px;
 }
 
 .feature-story p {
   max-width: 600px;
 }
 
-.feature-story .feature-image {
+.side-image {
   position: absolute;
-  top: 0;
   right: -130px;
+  top: 0;
   width: 140px;
   border: 1px solid #ccc;
+  height: auto;
 }
 
-.small-articles {
+.gallery-subsections {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-.small-articles article {
+.gallery-subsections article {
   flex: 1 1 30%;
   border: 1px solid #ccc;
   padding: 20px;
@@ -138,7 +133,7 @@
   box-sizing: border-box;
 }
 
-.small-articles h3 {
+.gallery-subsections h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.4rem;
@@ -147,31 +142,36 @@
   text-transform: uppercase;
 }
 
-/* Responsive for mobiles */
+/* Responsive */
 
 @media (max-width: 900px) {
-  .main-feature {
+  .gallery-main {
     flex-direction: column;
   }
 
-  .feature-story .feature-image {
+  .side-image {
     position: static;
     width: 100%;
     margin-top: 20px;
   }
 
-  .small-articles {
+  .gallery-subsections {
     flex-direction: column;
   }
 
-  .small-articles article {
-    flex: none;
+  .gallery-subsections article {
     width: 100%;
     margin-bottom: 20px;
   }
 
   .contact-box {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-section {
+    padding: 20px 10px;
   }
 }
