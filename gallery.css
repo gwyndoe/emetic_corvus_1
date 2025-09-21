@@ -1,5 +1,6 @@
 body {
   background: #111;
+  background-image: url ("cream11.png");
   margin: 0;
   padding: 2rem;
   font-family: "Times New Roman", serif;
@@ -52,3 +53,4 @@ body {
 .cell.tall {
   grid-row: span 2;
 }
+
