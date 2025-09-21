@@ -1,45 +1,53 @@
-/* Gallery Section */
-.gallery {
-  padding: 2rem;
-  background: #f8f8f4; /* light newspaper tone */
+/* Newspaper-style gallery */
+.gallery-section {
+  background: #f8f7f2; /* light paper tone */
+  padding: 2rem 1rem;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   font-family: "Georgia", "Times New Roman", serif;
 }
 
-.gallery-title {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+.section-heading {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
   border-bottom: 2px solid #000;
-  padding-bottom: 0.5rem;
-  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  margin-bottom: 2rem;
 }
 
-.gallery-grid {
+.gallery-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.gallery-grid figure {
+.gallery-item {
+  border: 2px solid #000;
   background: #fff;
-  border: 1.5px solid #000;
-  padding: 0.75rem;
-  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.gallery-grid img {
-  max-width: 100%;
+.gallery-item img {
+  width: 100%;
   display: block;
-  border-bottom: 1px solid #000;
-  margin-bottom: 0.5rem;
+  border: 1px solid #000;
+  margin-bottom: 0.75rem;
 }
 
-.gallery-grid figcaption {
-  font-size: 0.9rem;
+.gallery-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  margin: 0.5rem 0;
+}
+
+.gallery-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
