@@ -51,6 +51,16 @@ h1, h2 {
   margin: 0 0 12px 0;
 }
 
+.centerpiece {
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centerpiece img {
+  height: 450px;
+  width: auto;
 
 
 .menu-grid {
@@ -84,20 +94,9 @@ h1, h2 {
   text-shadow: 1px 1px 2px #000;
   pointer-events: none;
 }
-.centerpiece {
-  grid-row: 1 / span 3;
-  grid-column: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.centerpiece img {
-  height: 450px;
-  width: auto;
-}
 footer {
   text-align: center;
-  margin-top: 28px;
+  margin-top: 200px;
   font-size: 0.95rem;
   color: #000000;
 }
@@ -134,11 +133,6 @@ footer a {
     letter-spacing: 1px;
   }
 
-  .centerpiece {
-    grid-column: auto;
-    margin: 1 auto 20px;
-  }
-
   .centerpiece img {
     width: 150%;
     height: auto;
@@ -147,11 +141,8 @@ footer a {
     justify-content: center
   }
 
-  footer {
-    font-size: 0.8rem;
-    margin-bottom: 100px;
-  }
-}
+
+
 
 
 
