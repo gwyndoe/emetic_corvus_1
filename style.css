@@ -1,40 +1,67 @@
-* {
+body, body {
+  font-size: 60px;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+  height: 100%;
   font-family: 'Noto Sans JP', sans-serif;
   background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 16px;
-  min-height: 100vh;
+  padding: 100px;
 }
 
-/* Urdu text example */
 .urdu-text {
   font-family: 'Noto Nastaliq Urdu', serif;
-  font-size: 2rem;
-  direction: rtl;
-  margin: 1rem 0;
+  font-size: 2rem; /* Adjust as needed */
+  direction: rtl;  /* Right-to-left for Urdu */
 }
 
-/* Menu grid container */
+.container {
+  background-image: url('DSCN1111.JPG');
+  background-size: 70%;      /* Make the image cover the container */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 400px;
+  margin: 40px auto 0 auto;
+  padding: 24px 32px;
+  text-align: left;
+  padding: 40px;
+  color: white;                /* Make text readable */
+}
+
+
+nav {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0 0 12px 0;
+}
+
+
+
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr 120px 1fr;
   grid-template-rows: repeat(3, 110px);
   gap: 18px 1px;
-  background: #000;
-  padding: 40px 20px;
-  border-radius: 30px;
-  max-width: 1000px;
-  margin: 40px auto;
+  background: #000000;
+  padding: 90px 530px;
+  border-radius: 100px;
 }
-
-/* Menu items style */
 .menu-item {
   position: relative;
   display: flex;
@@ -42,26 +69,21 @@ body {
   justify-content: center;
   text-decoration: none;
 }
-
 .menu-item img {
-  width: 100%;
-  max-width: 130px;
-  height: auto;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 8px;
   filter: brightness(0.85);
 }
-
 .menu-item span {
   position: absolute;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.1rem;
   letter-spacing: 1.5px;
   text-shadow: 1px 1px 2px #000;
   pointer-events: none;
 }
-
-/* Centerpiece */
 .centerpiece {
   grid-row: 1 / span 3;
   grid-column: 2;
@@ -69,84 +91,89 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .centerpiece img {
   height: 450px;
   width: auto;
-  max-width: 100%;
 }
-
-/* Footer */
 footer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  text-align: center;
   margin-top: 28px;
-  font-size: 0.9rem;
-  color: #fff;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 0.95rem;
+  color: #000000;
 }
-
 footer a {
   color: #66aaff;
   text-decoration: underline;
 }
 
-/* Responsive tablet */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .menu-grid {
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin:-100px;
     border-radius: 20px;
   }
 
-  .centerpiece {
-    grid-column: span 2;
-    grid-row: auto;
+  .menu-item {
     justify-content: center;
-  }
-
-  .centerpiece img {
-    height: 250px;
-  }
-}
-
-/* Responsive mobile */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .menu-grid {
-    grid-template-columns: 1fr;
     padding: 10px;
-    border-radius: 10px;
-    gap: 12px;
+     ;
   }
 
   .menu-item img {
-    max-width: 100%;
+    width: 100px; /* smaller images */
     height: auto;
+    filter: brightness(0.75); /* keep rustic effect */
     border-radius: 6px;
   }
 
+  .menu-item span {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
   .centerpiece {
-    grid-column: 1;
-    margin: 0;
+    grid-column: auto;
+    margin: 1 auto 20px;
   }
 
   .centerpiece img {
-    width: 100%;
+    width: 150%;
     height: auto;
-    max-height: 300px;
+    max-height: px;
+    align-items: center;
+    justify-content: center
   }
 
   footer {
-    flex-direction: column;
     font-size: 0.8rem;
-    gap: 8px;
+    margin-bottom: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
