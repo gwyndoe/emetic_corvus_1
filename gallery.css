@@ -19,14 +19,14 @@
   margin-bottom: 2.5rem;
 }
 
-/* Proper multi-column layout */
+/* FIX: proper grid layout */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
 }
 
-/* Newspaper box style */
+/* Card style */
 .gallery-card {
   border: 2px solid #000;
   background: #fff;
@@ -34,16 +34,18 @@
   text-align: left;
 }
 
+/* FIX: consistent image sizing */
 .gallery-card img {
   width: 100%;
-  height: 200px;       /* consistent height */
-  object-fit: cover;   /* crop instead of stretch */
+  height: 220px;        /* force uniform size */
+  object-fit: cover;    /* crop nicely */
   border: 1px solid #000;
   margin-bottom: 0.75rem;
 }
 
+/* Captions styled properly */
 .gallery-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 0 0.5rem 0;
